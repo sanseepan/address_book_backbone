@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>address book</title>
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align: center">Address Book App</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Telephone</th>
+
+        </tr>
+        <tr>
+            <td><input class="form-control name-input"></td>
+            <td><input class="form-control address-input"></td>
+            <td><input class="form-control telephone-input"></td>
+            <td><button class="btn btn-primary add-contact">Add</button></td>
+        </tr>
+        </thead>
+        <tbody class="contacts-list"></tbody>
+    </table>
+</div>
+
+<script type="text/template" class="contacts-list-template">
+    <td><span class="name"><%= name %></span></td>
+    <td><span class="address"><%= address %></span></td>
+    <td><span class="telephone"><%= telephone %></span></td>
+
+
+</script>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/underscore/underscore.js"></script>
+<script src="node_modules/backbone/backbone.js"></script>
+<script src="node_modules/backbone-validation/src/backbone-validation.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
